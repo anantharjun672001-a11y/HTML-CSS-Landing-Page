@@ -1,0 +1,26 @@
+/* root colors */
+:root{
+    --primary-orange:#FD8D3A;
+    --white:#FFFFFF;
+    --black:#222222;
+    --blue:#4086F4;
+    --grey:#666666;
+    --light-grey:#999999;
+
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* base styling completed */
+
+.wrapper{
+    max-width: 1135px;
+    margin: 0 auto;
+}
