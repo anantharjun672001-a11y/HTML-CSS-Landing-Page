@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -68,13 +69,14 @@
                     <p class="inside">Number of guest</p>
                 </div>
                 <a href="#" class="explore-btn">Explore Now</a>
-            </div>          
+            </div>    
+                  
         </div>
     </header>
     <!-- header section end-->
     <!-- Testominal Section start -->
-    <section class="things-section">
-        <div class="wrapper">
+    <div class="wrapper" id="wrapper">
+        <section class="things-section">
             <h2 class="things-title">
                 Things you need <span>to do</span> 
             </h2>
@@ -102,111 +104,148 @@
                 </div>
 
             </div>
-        </div>
-    </section>
-
-    
-
+        </section>
+    </div>
     <!-- Testominal Section end -->
     <!-- Discounts Section Start -->
-    <section class="discounts">
-        <div class="wrapper">
-            <h1>Exclusive deals & discounts</h1>
-            <p>Discover our fantastic early booking discounts & start planning your journey.</p>
-            <div class="tour-card">
-                <div class="first-card">
-                    <img src="assets/Image.png" alt="First">
-                    <div class="card-footer">
-                        <p>Madrid<span style="text-align:left;"><img src="assets/star 1.png" alt="star" height="13px"> 4.8</span></p>
-                        <p><img src="assets/locationgrey.svg" alt="LocationGrey"> Spain <span><s> $950</s> $850</span></p>
-                    </div>
-                </div>
-                <div class="first-card">
-                    <img src="assets/Image (3).png" alt="Lighthouse">
-                    <input type='button' name='more' class='btn' value='Book Now'>
-                    <div class="card-footer">
-                        <p>Firenze<span><img src="assets/star 1.png" alt="star" height="13px"> 4.5</span></p>
-                        <p><img src="assets/locationgrey.svg" alt="LocationGrey"> ltaly<span><s> $850</s> $750</span></p>
-                    </div>
-                </div>
-                <div class="first-card">
-                    <img src="assets/Image (1).png" alt="Paris">
-                    <div class="card-footer">
-                        <p>Paris<span><img src="assets/star 1.png" alt="star" height="13px"> 4.4</span></p>
-                        <p><img src="assets/locationgrey.svg" alt="LocationGrey"> France<span><s> $699</s> $599</span></p>
-                    </div>
-                </div>
-                <div class="first-card">
-                    <img src="assets/Image (2).png" alt="London">
-                    <div class="card-footer">
-                        <p>London<span><img src="assets/star 1.png" alt="star" height="13px"> 4.8</span></p>
-                        <p><img src="assets/locationgrey.svg" alt="LocationGrey"> UK<span><s> $850</s> $750</span></p>
-                    </div>
-                </div>
-                <img src="assets/leftarrow.svg" alt=""> <img src="assets/rightarrow.svg" alt="">
-            </div>
-        </div>
-    </section>
+    
+    <div class="wrapper">
+        <section class="deals-section">
+            <h2 class="title">Exclusive <span>deals & discounts</span></h2>
+            <p class="subtitle">Discover our fantastic early booking discounts<br> & start planning your journey.</p>
 
+
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/Image.png" alt="First">
+                    <div class="info">
+                        <p class="h6">Madrid<span><i class="fa fa-star" aria-hidden="true"></i> 4.8</span></p>
+                        
+                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Spain
+                                <span class="old-price">$950</span>
+                                <span class="new-price">$850</span>
+                            </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/Image (3).png" alt="Lighthouse">
+                    <button class="book-btn">Book Now</button>
+                    <div class="info">
+                        <p class="h6">Firenze<span><i class="fa fa-star" aria-hidden="true"></i> 4.5</span></p>
+                        
+                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Italy
+                                <span class="old-price">$850</span>
+                                <span class="new-price">$750</span></p>
+                           
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="assets/Image (1).png" alt="Paris">
+                    <div class="info">
+                        <p class="h6">Paris<span><i class="fa fa-star" aria-hidden="true"></i> 4.4</span></p>
+                        
+                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> France
+                                <span class="old-price">$699</span>
+                                <span class="new-price">$599</span></p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="assets/Image (2).png" alt="London">
+                    <div class="info">
+                        <p class="h6">London<span><i class="fa fa-star" aria-hidden="true"></i> 4.8</span></p>
+                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> UK <span class="old-price">$850</span>
+                                <span class="new-price">$850</span></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="arrows">
+                <button class="arrow"><img src="assets/leftarrow.svg" alt=""></button>
+                <button class="arrow"><img src="assets/rightarrow.svg" alt=""></button>
+            </div>
+        </section>
+    </div>
     <!-- Discounts Section End -->
     <!-- Plans Section start -->
+
     <div class="wrapper">
-        <section class="plan-section">
-            <div class="plan-content">
-                <h1>
-                    Best <span>vacation plan</span>
-                    <img src="assets/coconuttree.svg" alt="coconut tree" class="coconut-icon"><img src="assets/coconuttree.svg" alt="coconut tree" class="coconut-icon">
-                </h1>
-                <p>Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
-                <img src="assets/leftarrow.svg" alt="left-arrow"> <img src="assets/rightarrow.svg" alt="right-arrow">
+        <section class="plans-section">
+
+            <h2 class="plans-title">Best <span>vacation plan</span></h2>
+            <p class="plans-subtitle">
+                Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!
+            </p>
+            <div class="plan-arrows">
+                <button class="arrow-btn"><img src="assets/leftarrow.svg" alt=""></button>
+                <button class="arrow-btn "><img src="assets/rightarrow.svg" alt=""></button>
             </div>
-            <div class="plan-card">
-                <div class="second-card">
-                        <img src="assets/Images.jpg" alt="Rome" height="327px" width="369px">
-                        <div class="card-footer">
-                            <p>Rome, ltaly <span>$ 5,42k</span></p>
-                            <p><img src="assets/navarroworange.svg" alt="Arrow"> 10 Days Trip <span> <img src="assets/star 1.png" alt="" height="13px"> 4.8</span></p>
+
+            <div class="plans-cards">
+                <div class="plan-card">
+                    <img src="assets/Images.jpg" alt="Rome" height="327px" width="369px">
+                    <div class="plan-info">
+                        <p>Rome, Italy <span class="price">$5,42k</span></p>
+                        <div class="details">
+                            <span class="trip"><i class="fa fa-location-arrow" aria-hidden="true"></i> 10 Days Trip</span>
+                            <span class="rating"><i class="fa fa-star" aria-hidden="true"></i> 4.8</span>
                         </div>
-                </div>                
-                <div class="second-card">
-                        <img src="assets/Image (5).png" alt="uk">
-                        <div class="card-footer">
-                            <p>London, UK <span>$ 2,42k</span></p>
-                            <p><img src="assets/navarroworange.svg" alt="Arrow"> 07 Days Trip <span> <img src="assets/star 1.png" alt="" height="13px"> 4.7</span></p>
-                        </div>
+                        
+                    </div>
                 </div>
-                <div class="second-card">
-                        <img src="assets/Image (6).png" alt="japan">
-                        <div class="card-footer">
-                            <p>Osaka, Japan <span>$ 5,42k</span></p>
-                            <p><img src="assets/navarroworange.svg" alt="Arrow"> 10 Days Trip <span> <img src="assets/star 1.png" alt="" height="13px"> 4.8</span></p>
+
+                <!-- Card 2 -->
+                <div class="plan-card">
+                    <img src="assets/Image (5).png" alt="uk">
+                    <div class="plan-info">
+                        <p>London, UK<span class="price">$2,42k</span></p>
+                        <div class="details">
+                            <span class="trip"><i class="fa fa-location-arrow" aria-hidden="true"></i> 10 Days Trip</span>
+                            <span class="rating"><i class="fa fa-star" aria-hidden="true"></i> 4.7</span>
                         </div>
+                        
+                    </div>
                 </div>
+
+                <!-- Card 3 -->
+                <div class="plan-card">
+                    <img src="assets/Image (6).png" alt="japan">
+                    <div class="plan-info">
+                        <p>Osaka,Japan<span class="price">$5,42k</span></p>
+                        <div class="details">
+                            <span class="trip"><i class="fa fa-location-arrow" aria-hidden="true"></i> 10 Days Trip</span>
+                            <span class="rating"><i class="fa fa-star" aria-hidden="true"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </section>
     </div>
 
     <!-- Plans Section end -->
     <!-- grey section start -->
-    <section class="grey-section">
-        <div class="wrapper">
+    <div class="wrapper">
+        <section class="testimonial-section">
+
             <div class="left-content">
-                <h1>What people say <span>about us.</span></h1>
+                <h2>What people say <span>about us.</span></h2>
                 <p>Our Clients send us bunch of smilies with our services and we love them.</p>
 
                 <div class="testimonial-arrows">
-                    <button class="arrow-btn left">&#8592;</button>
-                    <button class="arrow-btn right">&#8594;</button>
+                    <button class="arrow-btn left"><img src="assets/leftarrow.svg" alt=""></button>
+                    <button class="arrow-btn right"><img src="assets/rightarrow.svg" alt=""></button>
                 </div>
             </div>
 
             <div class="right-content">
-                <img src="assets/Element.png" class="airplane-icon" alt="airplanes">
-
-                <div class="testimonial-card back-card">
-                    <p class="name">Chris Thomas</p>
-                    <span class="role">CEO of Red Button</span>
-                </div>
+                <img src="assets/Element.png  " alt="airplanes" class="airplane-icon">
 
                 <div class="testimonial-card front-card">
                     <img src="assets/Image (7).png" alt="user" class="user-img">
@@ -219,15 +258,20 @@
                     <p class="name">Mike taylor</p>
                     <span class="role">Lahore, Pakistan</span>
                 </div>
+                <div class="testimonial-card back-card">
+                    <p class="name">Chris Thomas</p>
+                    <span class="role">CEO of Red Button</span>
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
+
+    </div>
 
     <!-- grey section end -->
     <!-- slide section start -->
-    <div class="blog-section">
-        <div class="wrapper">
+    <div class="wrapper">
+        <div class="blog-section">
             <h2 class="blog-title">
                 Get update with <span>latest blog</span>
             </h2>
@@ -265,9 +309,8 @@
                 <span class="dot active"></span>
                 <span class="dot"></span>
             </div>
-        </div>
-
-    </section>
+        </section>
+    </div>
     <!-- slide section end -->
     <!-- subscribe section start -->
      <section class="subscribe-section">
@@ -277,7 +320,7 @@
 
                 <form class="subscribe-form">
                     <div class="input-box">
-                        <img src="assets/mail-icon.svg" alt="">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         <input type="email" placeholder="Enter your mail">
                     </div>
                     <button type="submit">Subscribe</button>
@@ -286,22 +329,22 @@
             </div>
 
             <img src="assets/Group 42.png" class="arches" alt="">
-            <img src="assets/coconuttree.svg" class="palms" alt=""><img src="assets/coconuttree.svg" class="palms" alt="">
+            <img src="assets/coconuttree.svg" class="palms" alt="">
         </div>
     </section>
     <!-- subscribe section end -->
     <!-- footer start -->
-    <section class="footer-section">
-        <div class="wrapper">
+    <div class="wrapper">
+        <section class="footer-section">
             <div class="footer-wrapper">
                 <div class="footer-brand">
                     <h2>Trabook <img src="assets/logo.svg" alt=""></h2>
                     <p>Book your trip in minute, get full<br>Control for much longer.</p>
 
                     <div class="social-icons">
-                        <a href="#"><img src="assets/Facebook Icon.png" alt=""></a>
-                        <a href="#"><img src="assets/Group (1).png" alt=""></a>
-                        <a href="#"><img src="assets/Social.png" alt=""></a>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </div>
                 </div>
 
@@ -336,9 +379,9 @@
                 <p>Copyright, Trabook 2022. All rights reserved.</p>
                 <p>Terms & Conditions</p>
             </div>
-        </div>
-    </section>
-
+       
+        </section>
+    </div>
     <!-- footer end -->
 
 </body>

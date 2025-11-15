@@ -151,8 +151,7 @@ nav img{
   background: var(--white);
   padding: 10px 10px;
   border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.07);
-  margin-top: 40px;
+  box-shadow: 10px 07px  rgba(0,0,0,0.07);
   font-family: "Poppins", sans-serif;
 }
 
@@ -174,11 +173,12 @@ nav img{
   font-size: 18px;
 }
 
-.things-section {
+ .things-section {
   text-align: center;
   padding: 80px 0;
-  background: #f6f8fc; 
-  font-family: "Poppins", sans-serif;
+  background: #F7F8FC; 
+  font-family: "Poppins", sans-serif; 
+  margin-top: 40px;
 }
 
 .things-title {
@@ -232,11 +232,580 @@ nav img{
 }
 
 
+.deals-section {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 0;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Volkhov;
+  font-weight: bold;
+}
+
+.title span {
+  color: var(--primary-orange);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--light-grey);
+  padding-left: 10px;
+}
+
+/* Cards Layout */
+.cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  width: 230px;
+  padding-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+/* Book Now Button */
+.book-btn {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary-orange);
+  color: var(--white);
+  border: none;
+  padding: 16px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* Card Info Section */
+.h6{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 5px;
+}
+.h6 span{
+    padding-left: 80px;
+    color: var(--grey);
+    font-size: 16px;
+}
+.h6 i{
+    color: gold;
+}
+.location{
+    text-align: left;
+    padding-left: 05px;
+    color: var(--light-grey);
+}
+
+
+/* Prices */
+.price-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--light-grey);
+  font-size: 16px;
+  padding-left: 60px;
+}
+
+.new-price {
+  color: var(--primary-orange);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Arrows */
+.arrows {
+  margin-top: 25px;
+}
+
+.arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 90%;
+  border: none;
+  font-size: 18px;
+  margin: 0 8px;
+}
 
 
 
+.plans-section {
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.plans-title {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: Volkhov;
+}
+
+.plans-title span {
+  color: var(--primary-orange);
+}
 
 
+.plans-subtitle {
+  width: 520px;
+  margin: 10px auto 40px;
+  color: var(--grey);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Cards Layout */
+.plans-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.plan-card {
+  width: 260px;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.plan-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Info Section */
+.plan-info {
+  text-align: left;
+  padding: 15px;
+}
+
+.plan-info h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  color: var(--light-grey);
+  font-size: 16px;
+}
+
+.rating {
+  color: #ffb400;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-top: 10px;
+  padding-left: 70px;
+}
+
+/* Arrows */
+.plan-arrows {
+  margin-top: 30px;
+}
+
+.arrow-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+.arrow-btn.filled {
+  background: var(--primary-orange);
+  color: var(--white);
+}
+
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 0;
+    gap: 50px;
+    background: #f6f8fc;
+    position: relative;
+}
+
+/* LEFT SIDE */
+.left-content {
+    width: 40%;
+    padding-left: 20px;
+}
+
+.left-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Volkhov;
+    line-height: 1.3;
+    color: var(--black);
+}
+
+.left-content h2 span {
+    color: var(--primary-orange);
+}
+
+.left-content p {
+    margin-top: 15px;
+    max-width: 300px;
+    color: var(--light-grey);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* ARROWS */
+.testimonial-arrows {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow-btn {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: var(--white);
+    font-size: 1.2rem;
+}
+
+.arrow-btn.right {
+    
+    color: var(--white);
+}
 
 
+/* RIGHT SIDE */
+.right-content {
+    width: 55%;
+    position: relative;
+    
+}
+
+.airplane-icon {
+    position: absolute;
+    top: 6px;
+    right:100px;
+    width: 100px;
+}
+
+/* CARDS */
+.testimonial-card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 14px;
+    width: 420px;
+    box-shadow: 0px 20px 35px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.back-card {
+    opacity: 0.35;
+    margin-left: 30px;
+    margin-top: -60px;
+}
+
+.front-card {
+    margin-top: 20px;
+}
+
+/* USER IMAGE */
+.user-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    border: 5px solid #fff;
+}
+
+/* TEXT */
+.review {
+    margin-top: 10px;
+    color: var(--grey);
+    font-size: 16px;
+}
+
+.name {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.role {
+    color: var(--light-grey);
+    font-size: 14px;
+}
+
+/* slide-section start css */
+
+.blog-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Title */
+.blog-title {
+    font-size: 48px;
+    font-family: Volkhov;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.blog-title span {
+    color: var(--primary-orange);
+}
+
+/* Blog grid */
+.blog-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+/* Blog card */
+.blog-card {
+    width: 250px;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog-card h3 {
+    font-size: 18px;
+    margin-top: 12px;
+    color: var(--black);
+    line-height: 1.4;
+}
+
+.blog-card .date {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--light-grey);
+}
+
+/* Pagination dots */
+.pagination {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    background: var(--light-grey);
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: var(--primary-orange);
+}
+  
+
+/* subscription section css */
+
+.subscribe-section {
+    position: relative;
+    background: var(--primary-orange); 
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+}
+
+/* Heading */
+.subscribe-section h2 {
+    font-size: 48px;
+    font-family: Volkhov;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+/* Form wrapper */
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    padding: 16px 20px;
+    border-radius: 12px;
+    width: 750px;
+    gap: 10px;
+}
+
+.input-box i {
+    width: 20px;
+    color:var(--light-grey);
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button */
+.subscribe-form button {
+    background: var(--primary-orange);
+    color: var(--white);
+    padding: 11px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left:-150px;
+}
+
+/* Decorative Arches (left) */
+.arches {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    opacity: 0.45;
+}
+
+/* Palm trees (top-right) */
+.palms {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+    opacity: 0.6;
+}
+ 
+
+/* footer css */
+
+.footer-section {
+    padding: 60px 40px;
+    background: var(--white);
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main layout */
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Brand area */
+.footer-brand h2 {
+    font-size: 24px;
+    font-family: Volkhov;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    font-size: 16px;
+    color: var(--light-grey);
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a i {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* Links area */
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-links .column h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-links .column a {
+    display: block;
+    text-decoration: none;
+    color: var(--light-grey);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Bottom section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 25px;
+    font-size: 16px;
+    color: var(--light-grey);
+}
+
+.footer-bottom a {
+    color: var(--grey);
+    text-decoration: none;
+}
 
