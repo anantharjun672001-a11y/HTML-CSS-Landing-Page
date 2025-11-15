@@ -771,6 +771,7 @@ nav img{
     border-radius: 50%;
     background: white;
     padding: 10px;
+    color: var(--black);
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
@@ -778,6 +779,7 @@ nav img{
 .footer-links {
     display: flex;
     gap: 80px;
+    
 }
 
 .footer-links .column h3 {
